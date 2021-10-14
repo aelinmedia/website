@@ -6,8 +6,15 @@ function EndSection() {
   return (
     <div>
       <EndContainer>
-        <UIText size={"2.2em"}>Have a Project in mind?</UIText>
-        <CustomInput type="text" placeholder="What's your Email?" />
+        <div></div>
+        <div style={{
+          display: "flex",
+          flexDirection:"column",
+          alignItems:"center"
+        }}>
+          <UIText size={"2.2em"}>Have a Project in mind?</UIText>
+          <CustomInput type="text" placeholder="What's your Email?" />
+        </div>
         <FooterWrapper>
           <Footer></Footer>
         </FooterWrapper>
@@ -26,11 +33,13 @@ const CustomInput = styled.input`
   outline: none;
   font-size: 18px;
   color: #e0ebff;
+  
   background-color: transparent;
   margin-top: 24px;
   ::placeholder,
   ::-webkit-input-placeholder {
     color: #999999;
+    font-family: "MontRegular";
   }
   :-ms-input-placeholder {
     color: #999999;
@@ -46,7 +55,7 @@ const EndContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 `;
 const UIText = styled.div`
@@ -55,7 +64,6 @@ const UIText = styled.div`
 `;
 
 const FooterWrapper = styled.h3`
-  position: fixed;
-  bottom: 0;
+  max-width: 90vw;
   margin-bottom: 30px;
 `;

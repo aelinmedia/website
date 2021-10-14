@@ -1,13 +1,13 @@
 import "./index.css";
 import EndSection from "./pages/endsection";
 import FeaturedWork from "./pages/featuredwork";
+import MainPage from "./pages/landingpage";
 function App() {
   return (
     <div>
-    <FeaturedWork />
-      <EndSection>
-        
-      </EndSection>
+      <MainPage />
+      <FeaturedWork />
+      <EndSection />
     </div>
   );
 }

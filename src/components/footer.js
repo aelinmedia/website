@@ -31,10 +31,12 @@ function Footer() {
 export default Footer;
 const FooterContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   flex-shrink: 0;
   justify-content: space-between;
   width: 100%;
-  min-width: 1100px;
+  min-width: 90vw;
+  /* padding: 20px; */
   align-items: center;
 `;
 const UIText = styled.div`

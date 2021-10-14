@@ -3,11 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "MontRegular";
+  src: local("MontRegular"), url("./assets/fonts/Mont-Regular.otf");
+}
+@font-face {
+  font-family: "MontBold";
+  src: local("MontBold"), url("./assets/fonts/Mont-Bold.otf");
+}
+@font-face {
+  font-family: "MontSemiBold";
+  src: local("MontSemiBold"), url("./assets/fonts/Mont-SemiBold.otf");
+}
 body,
 html {
-  /* background-color: #210837; */
+  background-color: #210837;
   height: 100%;
   width: 100%;
+
+  font-family: "MontRegular";
   margin: 0;
 }
 .App {
