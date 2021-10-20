@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import img from "../assets/images/semilogo.png";
+import img from "../assets/images/LOGO.png";
 
 function Navbar() {
   return (
     <NavBarContainer>
-      <img src={img} width="40" alt="" />
+      <img src={img} width="180" alt="" />
       <NavItemsWrapper>
         <UIText>WORK</UIText>
         <UIText>ABOUT</UIText>
@@ -33,7 +33,7 @@ const NavItemsWrapper = styled.div`
 const UIText = styled.div`
   font-family: "MontSemiBold";
   cursor: pointer;
-  color: #e0ebff;
+  color: #fff;
   font-size: 1.5rem;
   margin-left: 16px;
 `;

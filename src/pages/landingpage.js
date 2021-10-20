@@ -20,9 +20,11 @@ function mainPage() {
           impactful products.
         </UIText>
         <CtaButton>
-          <UIText color="#fff" font="MontSemiBold" size="1.3rem">
-            Contact Us
-          </UIText>
+          <a href="tel:+918247675335">
+            <UIText color="#fff" font="MontSemiBold" size="1.3rem">
+              Contact Us
+            </UIText>
+          </a>
         </CtaButton>
       </IntroWrapper>
     </MainPageWrapper>

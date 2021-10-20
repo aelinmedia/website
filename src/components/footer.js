@@ -11,18 +11,26 @@ function Footer() {
       <img src={img} width="160" alt="" />
       <UIText>{"© " + new Date().getFullYear()}</UIText>
       <SocialIconsWrapper>
-        <SocialIcon>
-          <Icon src={insta} alt="" />
-        </SocialIcon>
-        <SocialIcon>
-          <Icon src={twitter} alt="" />
-        </SocialIcon>
-        <SocialIcon>
-          <Icon src={dribbble} alt="" />
-        </SocialIcon>
-        <SocialIcon>
-          <Icon src={youtube} alt="" />
-        </SocialIcon>
+        <a href="https://www.instagram.com/aelinmedia/">
+          <SocialIcon>
+            <Icon src={insta} alt="" />
+          </SocialIcon>
+        </a>
+        <a href="https://www.twitter.com/">
+          <SocialIcon>
+            <Icon src={twitter} alt="" />
+          </SocialIcon>
+        </a>
+        <a href="https://www.dribbble.com/">
+          <SocialIcon>
+            <Icon src={dribbble} alt="" />
+          </SocialIcon>
+        </a>
+        <a href="https://www.youtube.com/">
+          <SocialIcon>
+            <Icon src={youtube} alt="" />
+          </SocialIcon>
+        </a>
       </SocialIconsWrapper>
     </FooterContainer>
   );

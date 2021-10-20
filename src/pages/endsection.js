@@ -7,13 +7,22 @@ function EndSection() {
     <div>
       <EndContainer>
         <div></div>
-        <div style={{
-          display: "flex",
-          flexDirection:"column",
-          alignItems:"center"
-        }}>
-          <UIText size={"2.2em"}>Have a Project in mind?</UIText>
-          <CustomInput type="text" placeholder="What's your Email?" />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <UIText size={"2.2em"} color={"#e0ebff"}>
+            Have a Project in mind?
+          </UIText>
+          <a href="mailto:">
+            <UIText size={"1.1em"} color={"#999999"}>
+              📧 support@aelinmedia.com   
+            </UIText>
+          </a>
+          {/* <CustomInput type="text" placeholder="What's your Email?" /> */}
         </div>
         <FooterWrapper>
           <Footer></Footer>
@@ -33,7 +42,6 @@ const CustomInput = styled.input`
   outline: none;
   font-size: 18px;
   color: #e0ebff;
-  
   background-color: transparent;
   margin-top: 24px;
   ::placeholder,
@@ -59,7 +67,7 @@ const EndContainer = styled.div`
   align-items: center;
 `;
 const UIText = styled.div`
-  color: #e0ebff;
+  color: ${(props) => props.color};
   font-size: ${(props) => props.size};
 `;
 
