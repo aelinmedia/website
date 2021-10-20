@@ -33,26 +33,26 @@ function EndSection() {
 }
 
 export default EndSection;
-const CustomInput = styled.input`
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: groove;
-  border: none;
-  outline: none;
-  font-size: 18px;
-  color: #e0ebff;
-  background-color: transparent;
-  margin-top: 24px;
-  ::placeholder,
-  ::-webkit-input-placeholder {
-    color: #999999;
-    font-family: "MontRegular";
-  }
-  :-ms-input-placeholder {
-    color: #999999;
-  }
-`;
+// const CustomInput = styled.input`
+//   border-top-style: hidden;
+//   border-right-style: hidden;
+//   border-left-style: hidden;
+//   border-bottom-style: groove;
+//   border: none;
+//   outline: none;
+//   font-size: 18px;
+//   color: #e0ebff;
+//   background-color: transparent;
+//   margin-top: 24px;
+//   ::placeholder,
+//   ::-webkit-input-placeholder {
+//     color: #999999;
+//     font-family: "MontRegular";
+//   }
+//   :-ms-input-placeholder {
+//     color: #999999;
+//   }
+// `;
 const EndContainer = styled.div`
   min-height: 100vh;
   background: url(${img}) #210837;
