@@ -95,7 +95,7 @@ export default function servicesPage() {
         </ItemWrapper>
         {services.map((eachService) => {
           return (
-            <ItemWrapper>
+            <ItemWrapper key={eachService.serviceName}>
               <EachItem>
                 <ServiceImagesWrapper>
                   <ServiceImage image={eachService.image}></ServiceImage>
