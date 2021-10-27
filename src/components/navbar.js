@@ -5,7 +5,7 @@ import img from "../assets/images/LOGO.png";
 function Navbar() {
   return (
     <NavBarContainer>
-      <img src={img} width="180" alt="" />
+      <img id="logoimg" src={img} width="180" alt="" />
       <NavItemsWrapper>
         <UIText>WORK</UIText>
         <UIText>ABOUT</UIText>
@@ -36,4 +36,7 @@ const UIText = styled.div`
   color: #fff;
   font-size: 1.5rem;
   margin-left: 16px;
+  @media screen and (max-width: 480px) {
+    font-size: 1.2rem;
+  }
 `;

@@ -19,7 +19,7 @@ function EndSection() {
           </UIText>
           <a href="mailto:">
             <UIText size={"1.1em"} color={"#999999"}>
-              📧 support@aelinmedia.com   
+              📧 support@aelinmedia.com
             </UIText>
           </a>
           {/* <CustomInput type="text" placeholder="What's your Email?" /> */}
@@ -67,11 +67,15 @@ const EndContainer = styled.div`
   align-items: center;
 `;
 const UIText = styled.div`
+  text-align: center;
   color: ${(props) => props.color};
   font-size: ${(props) => props.size};
+  margin-bottom: 14px;
+  @media screen and (max-width: 480px) {
+  }
 `;
 
 const FooterWrapper = styled.h3`
   max-width: 90vw;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 `;

@@ -54,7 +54,15 @@ const UIText = styled.div`
 
 const SocialIconsWrapper = styled.div`
   display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 0 auto;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    margin-left: auto;
+    margin-left: 0px;
+    margin-top: 18px;
+  }
 `;
 
 const SocialIcon = styled.div`

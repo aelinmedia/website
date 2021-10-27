@@ -147,8 +147,8 @@ const EachItem = styled.div`
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.05);
   height: 100%;
-  width: 100%;
-  margin: 0 12px;
+  margin: 0 14px;
+  width: 94%;
   padding: 36px 26px;
 `;
 const EachItem1 = styled.div`
@@ -156,9 +156,9 @@ const EachItem1 = styled.div`
   border-radius: 6px;
   background: #210837;
   height: 100%;
-  width: 100%;
-  margin: 0 12px;
-  padding: 0px 26px;
+  width: 97%;
+  margin: 0 14px;
+  padding: 36px 26px;
 `;
 const ItemWrapper = styled.div`
   display: flex;

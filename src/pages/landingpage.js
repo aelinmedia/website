@@ -40,6 +40,9 @@ const MainPageWrapper = styled.div`
   margin: 0;
   background-repeat: no-repeat;
   background-size: contain;
+  @media screen and (max-width: 480px) {
+    background: none;
+  }
 `;
 
 const IntroWrapper = styled.div`
@@ -49,6 +52,9 @@ const IntroWrapper = styled.div`
   margin: 0 auto;
   padding: 20vh 0;
   align-items: flex-start;
+  @media screen and (max-width: 480px) {
+    margin-left: 20px;
+  }
 `;
 
 const UIText = styled.div`
@@ -56,6 +62,8 @@ const UIText = styled.div`
   color: ${(props) => props.color};
   font-size: ${(props) => props.size};
   letter-spacing: ${(props) => props.space};
+  @media screen and (max-width: 480px) {
+  }
 `;
 
 const CtaButton = styled.div`
