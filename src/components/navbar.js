@@ -37,6 +37,6 @@ const UIText = styled.div`
   font-size: 1.5rem;
   margin-left: 16px;
   @media screen and (max-width: 480px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `;

@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import Navbar from "../components/navbar";
-import mainImg from "../assets/images/main-illustration.png";
+import anim from "../assets/images/anim.mp4";
 function mainPage() {
   return (
     <MainPageWrapper>
+      <BgVideoWrapper className="animvideo" autoPlay loop muted>
+        <source src={anim} type="video/mp4" />
+      </BgVideoWrapper>
       <Navbar />
       <IntroWrapper>
         <UIText size="1.2rem" color="#00AAF2" font="MontSemiBold" space="4px">
@@ -34,14 +37,26 @@ function mainPage() {
 export default mainPage;
 const MainPageWrapper = styled.div`
   min-height: 100vh;
-  background: url(${mainImg}) #210837;
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+  opacity: 0.9;
+  @media screen and (max-width: 480px) {
+    background: none;
+  }
+`;
+const BgVideoWrapper = styled.video`
+  max-height: 100vh;
   background-position: right;
   padding: 0;
   margin: 0;
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: -1;
+  position: absolute;
+  right: 0;
   @media screen and (max-width: 480px) {
-    background: none;
+    display: none;
   }
 `;
 
