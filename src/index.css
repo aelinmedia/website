@@ -1,13 +1,42 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "MontRegular";
+  src: local("MontRegular"), url("./assets/fonts/Mont-Regular.otf");
+}
+@font-face {
+  font-family: "MontBold";
+  src: local("MontBold"), url("./assets/fonts/Mont-Bold.otf");
+}
+@font-face {
+  font-family: "MontSemiBold";
+  src: local("MontSemiBold"), url("./assets/fonts/Mont-SemiBold.otf");
+}
+body,
+html {
+  background-color: rgba(0, 0, 0);
+  height: 100%;
+  width: 100%;
+
+  font-family: "MontRegular";
+  margin: 0;
+}
+.App {
+  min-height: 100vh;
+  background-image: url(./assets/images/main-illustration.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+}
+@media screen and (max-width: 480px) {
 }
