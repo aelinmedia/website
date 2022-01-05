@@ -2,9 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import img from "../assets/images/new-logo-light.png";
 import insta from "../assets/images/icons/instagram.svg";
-import twitter from "../assets/images/icons/twitter.svg";
-import dribbble from "../assets/images/icons/youtube.svg";
-import youtube from "../assets/images/icons/dribbble.svg";
+import linkedin from "../assets/images/icons/linkedin.svg";
+import whatsapp from "../assets/images/icons/whatsapp.svg";
 function Footer() {
   return (
     <FooterContainer>
@@ -16,19 +15,14 @@ function Footer() {
             <Icon src={insta} alt="" />
           </SocialIcon>
         </a>
-        <a href="https://www.twitter.com/">
+        <a href="https://www.linkedin.com/company/aelin-media-pvt-ltd">
           <SocialIcon>
-            <Icon src={twitter} alt="" />
+            <Icon src={linkedin} alt="" />
           </SocialIcon>
         </a>
-        <a href="https://www.dribbble.com/">
+        <a href="https://wa.me/%2B919951814924">
           <SocialIcon>
-            <Icon src={dribbble} alt="" />
-          </SocialIcon>
-        </a>
-        <a href="https://www.youtube.com/">
-          <SocialIcon>
-            <Icon src={youtube} alt="" />
+            <Icon src={whatsapp} alt="" />
           </SocialIcon>
         </a>
       </SocialIconsWrapper>
