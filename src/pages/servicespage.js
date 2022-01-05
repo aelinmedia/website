@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import videdit from "../assets/images/video.gif";
-import threed from "../assets/images/3d.gif";
-import motiong from "../assets/images/motion.gif";
-import vfximage from "../assets/images/vfx.gif";
-import graphic from "../assets/images/graphics.gif";
+import videdit from "../assets/images/services/video.gif";
+import threed from "../assets/images/services/3d.gif";
+import motiong from "../assets/images/services/motion.gif";
+import vfximage from "../assets/images/services/vfx.gif";
+import graphic from "../assets/images/services/graphics.gif";
 import img from "../assets/images/services_bg.png";
 
 export default function servicesPage() {
@@ -82,7 +82,7 @@ export default function servicesPage() {
 }
 
 const ServicesContainer = styled.div`
-  background: url(${img});
+  ${'' /* background: url(${img}); */}
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;

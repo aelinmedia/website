@@ -1,105 +1,57 @@
 import React from "react";
 import styled from "styled-components";
 import img from "../assets/images/LOGO.png";
-import { useTransition, animated, config } from "react-spring";
-import { MdClose, MdMenu } from "react-icons/md";
 
 function Navbar({ isOpen, toggleMenu }) {
-  let styleToggleButton = {
-    fontSize: "3rem",
-    color: "rgb(36,36,36)",
-    padding: 0,
-    border: "none",
-    background: "none",
-  };
-  let fullscreenMenu = useTransition(isOpen, null, {
-    from: {
-      opacity: 0,
-      transform: "scale(0.80)",
-    },
-    enter: {
-      opacity: 1,
-      transform: "scale(1)",
-      backgroundImage: "linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)",
-      position: "absolute",
-      maxHeight: "100vh",
-      top: 0,
-      bottom: 0,
-      right: 0,
-      left: 0,
-    },
-    leave: { opacity: 0, transform: "scale(0.80)" },
-    config: config.gentle,
-  });
-  let openButton = useTransition(isOpen, null, {
-    from: {
-      opacity: 0,
-      transform: "scale(0)",
-      position: "absolute",
-    },
-    enter: {
-      opacity: 1,
-      transform: "scale(1)",
-    },
-    leave: { opacity: 0, transform: "scale(0)" },
-    config: config.stiff,
-  });
   return (
-    <div>
+    <div style={{overflow:"hidden"}}
+    >
       <NavBarContainer>
         <img id="logoimg" src={img} width="180" alt="" />
-        <div
-          style={{
-            zIndex: 20,
-          }}
-        >
-          {openButton.map(({ item, key, props }) =>
-            !item ? (
-              <animated.div key={key} style={props}>
-                <button style={styleToggleButton} onClick={toggleMenu}>
-                  <MdMenu />
-                </button>
-              </animated.div>
-            ) : (
-              <animated.div key={key} style={props}>
-                <button style={styleToggleButton} onClick={toggleMenu}>
-                  <MdClose />
-                </button>
-              </animated.div>
-            )
-          )}
+        <header id="header" onClick={toggleMenu}>
+          <nav className="nav">
+            <button className={`toggle-menu ${isOpen ? "active" : ""}`}>
+              <span></span>
+            </button>
+          </nav>
+        </header>
+
+        <div id="menu" className={`${isOpen ? "open" : ""}`}>
+          <nav className="main-nav">
+            <ul>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <footer className="menu-footer">
+            <nav className="footer-nav">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i className="fa fa-twitter fa-fw"></i>
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i className="fa fa-envelope fa-fw"></i>
+                    Subscribe
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </footer>
         </div>
       </NavBarContainer>
-      <div>
-        {fullscreenMenu.map(
-          ({ item, key, props }) =>
-            item && (
-              <animated.div key={key} style={props}>
-            
-                <ul
-                  style={{
-                    height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    fontSize: "8vw",
-                    padding: 0,
-                    margin: 0,
-                    listStyle: "none",
-                    overflow: "hidden",
-                    textAlign: "left",
-                  }}
-                >
-                  <li>Link 1</li>
-                  <li>Link 2</li>
-                  <li>Link 3</li>
-                  <li>Link 4</li>
-                </ul>
-              </animated.div>
-            )
-        )}
-      </div>
     </div>
   );
 }

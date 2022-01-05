@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import img from "../assets/images/LOGO.png";
-import insta from "../assets/images/instagram.svg";
-import twitter from "../assets/images/twitter.svg";
-import dribbble from "../assets/images/youtube.svg";
-import youtube from "../assets/images/dribbble.svg";
+import insta from "../assets/images/icons/instagram.svg";
+import twitter from "../assets/images/icons/twitter.svg";
+import dribbble from "../assets/images/icons/youtube.svg";
+import youtube from "../assets/images/icons/dribbble.svg";
 function Footer() {
   return (
     <FooterContainer>
