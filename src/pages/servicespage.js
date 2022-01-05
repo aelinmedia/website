@@ -5,7 +5,7 @@ import threed from "../assets/images/services/3d.gif";
 import motiong from "../assets/images/services/motion.gif";
 import vfximage from "../assets/images/services/vfx.gif";
 import graphic from "../assets/images/services/graphics.gif";
-import img from "../assets/images/services_bg.png";
+// import img from "../assets/images/services_bg.png";
 
 export default function servicesPage() {
   let services = [
@@ -89,8 +89,7 @@ const ServicesContainer = styled.div`
   width: 100%;
   backdrop-filter: blur(5px);
   margin-bottom: 60px;
-  ${'' /* filter: blur(8px);
-  -webkit-filter: blur(8px); */}
+ 
 `;
 const ServiesWrapper = styled.div`
   display: grid;
@@ -154,7 +153,7 @@ const Header = styled.h2`
   display: flex;
   font-size: 2.6rem;
   text-align: center;
-  padding: 260px 0px 12px 0px;
+  padding: 100px 0px 12px 0px;
   color: #ffffff;
   font-family: "MontBold";
   justify-content: center;

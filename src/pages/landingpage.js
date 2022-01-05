@@ -76,6 +76,7 @@ const IntroWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  
   min-height: 62vh;
   @media screen and (max-width: 480px) {
     margin-left: 20px;
@@ -91,9 +92,9 @@ const UIText = styled.div`
   }
 `;
 
-const CtaButton = styled.div`
-  padding: 10px 28px;
-  background-color: #4344a3;
-  border-radius: 6px;
-  margin-top: 14px;
-`;
+// const CtaButton = styled.div`
+//   padding: 10px 28px;
+//   background-color: #4344a3;
+//   border-radius: 6px;
+//   margin-top: 14px;
+// `;

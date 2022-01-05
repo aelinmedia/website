@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import img from "../assets/images/LOGO.png";
+import img from "../assets/images/new-logo-light.png";
 
 function Navbar({ isOpen, toggleMenu }) {
   return (
     <div style={{overflow:"hidden"}}
     >
       <NavBarContainer>
-        <img id="logoimg" src={img} width="180" alt="" />
+        <img id="logoimg" src={img} width="168" alt="" />
         <header id="header" onClick={toggleMenu}>
           <nav className="nav">
             <button className={`toggle-menu ${isOpen ? "active" : ""}`}>
@@ -20,14 +20,14 @@ function Navbar({ isOpen, toggleMenu }) {
           <nav className="main-nav">
             <ul>
               <li>
-                <a href="#">About</a>
+                <a href="cool">About</a>
               </li>
               <li>
-                <a href="#">Pricing</a>
+                <a href="cool">Pricing</a>
               </li>
 
               <li>
-                <a href="#">Contact</a>
+                <a href="cool">Contact</a>
               </li>
             </ul>
           </nav>
@@ -36,13 +36,13 @@ function Navbar({ isOpen, toggleMenu }) {
             <nav className="footer-nav">
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="qwewq">
                     <i className="fa fa-twitter fa-fw"></i>
                     Twitter
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="kjh">
                     <i className="fa fa-envelope fa-fw"></i>
                     Subscribe
                   </a>
@@ -66,19 +66,19 @@ const NavBarContainer = styled.div`
   align-items: center;
 `;
 
-const NavItemsWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /* margin-top: 30px; */
-`;
-const UIText = styled.div`
-  font-family: "MontSemiBold";
-  cursor: pointer;
-  color: #fff;
-  font-size: 1.5rem;
-  margin-left: 16px;
-  @media screen and (max-width: 480px) {
-    font-size: 1.1rem;
-  }
-`;
+// const NavItemsWrapper = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   /* margin-top: 30px; */
+// `;
+// const UIText = styled.div`
+//   font-family: "MontSemiBold";
+//   cursor: pointer;
+//   color: #fff;
+//   font-size: 1.5rem;
+//   margin-left: 16px;
+//   @media screen and (max-width: 480px) {
+//     font-size: 1.1rem;
+//   }
+// `;

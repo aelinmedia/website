@@ -1,5 +1,5 @@
 export const tawkToLoadScripts = async () => {
-  var Tawk_API = Tawk_API || {};
+  // var Tawk_API = Tawk_API || {};
 
   // var Tawk_LoadStart = new Date();
 

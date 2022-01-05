@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import img from "../assets/images/LOGO.png";
+import img from "../assets/images/new-logo-light.png";
 import insta from "../assets/images/icons/instagram.svg";
 import twitter from "../assets/images/icons/twitter.svg";
 import dribbble from "../assets/images/icons/youtube.svg";
@@ -8,7 +8,7 @@ import youtube from "../assets/images/icons/dribbble.svg";
 function Footer() {
   return (
     <FooterContainer>
-      <img src={img} width="160" alt="" />
+      <img src={img} width="168" alt="" />
       <UIText>{"© " + new Date().getFullYear()}</UIText>
       <SocialIconsWrapper>
         <a href="https://www.instagram.com/aelinmedia/">

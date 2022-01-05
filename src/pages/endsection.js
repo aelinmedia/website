@@ -54,7 +54,7 @@ export default EndSection;
 //   }
 // `;
 const EndContainer = styled.div`
-  min-height: 100vh;
+  min-height: 90vh;
   background: url(${img});
   background-position: top;
   background-repeat: no-repeat;
@@ -77,5 +77,5 @@ const UIText = styled.div`
 
 const FooterWrapper = styled.h3`
   max-width: 90vw;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 `;
