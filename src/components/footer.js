@@ -68,10 +68,3 @@ const SocialIcon = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const Icon = styled.img`
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-`;

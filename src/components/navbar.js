@@ -19,14 +19,14 @@ function Navbar({ isOpen, toggleMenu }) {
           <nav className="main-nav">
             <ul>
               <li>
-                <a href="#">About</a>
+                <a href="/">About</a>
               </li>
               <li>
-                <a href="#">Pricing</a>
+                <a href="/">Pricing</a>
               </li>
 
               <li>
-                <a href="#">Contact</a>
+                <a href="/">Contact</a>
               </li>
             </ul>
           </nav>
