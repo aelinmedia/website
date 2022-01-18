@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./index.css";
+import EndSection from "./pages/endsection";
+import FeaturedWork from "./pages/featuredwork";
+import React from "react";
+import MainPage from "./pages/landingpage";
+import ServicesPage from "./pages/servicespage";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  container = React.createRef()
+
+  render() {
+    return (
+      <div id="container" ref={this.container}>
+        <MainPage />
+        <FeaturedWork />
+        <ServicesPage />
+        <EndSection />
+      </div>
+    );
+  }
 }
 
 export default App;
