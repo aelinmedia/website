@@ -4,8 +4,7 @@ import img from "../assets/images/new-logo-light.png";
 
 function Navbar({ isOpen, toggleMenu }) {
   return (
-    <div style={{overflow:"hidden"}}
-    >
+    <div style={{ overflow: "hidden" }}>
       <NavBarContainer>
         <img id="logoimg" src={img} width="168" alt="" />
         <header id="header" onClick={toggleMenu}>
@@ -20,14 +19,14 @@ function Navbar({ isOpen, toggleMenu }) {
           <nav className="main-nav">
             <ul>
               <li>
-                <a href="cool">About</a>
+                <a href="#">About</a>
               </li>
               <li>
-                <a href="cool">Pricing</a>
+                <a href="#">Pricing</a>
               </li>
 
               <li>
-                <a href="cool">Contact</a>
+                <a href="#">Contact</a>
               </li>
             </ul>
           </nav>
@@ -36,15 +35,15 @@ function Navbar({ isOpen, toggleMenu }) {
             <nav className="footer-nav">
               <ul>
                 <li>
-                  <a href="qwewq">
+                  <a href="https://www.instagram.com/aelinmedia/">
                     <i className="fa fa-twitter fa-fw"></i>
-                    Twitter
+                    Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="kjh">
+                  <a href="https://www.linkedin.com/company/aelin-media-pvt-ltd">
                     <i className="fa fa-envelope fa-fw"></i>
-                    Subscribe
+                    Linkedin
                   </a>
                 </li>
               </ul>

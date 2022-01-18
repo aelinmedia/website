@@ -20,10 +20,10 @@ function MainPage() {
       <Navbar isOpen={isOpen} toggleMenu={toggleMenu} />
       <IntroWrapper>
         <UIText size="1.2rem" color="#00AAF2" font="MontSemiBold" space="4px">
-          AELIN MEDIA
+          WE ARE AELIN MEDIA
         </UIText>
         <UIText size="2rem" color="#ffffff" font="MontBold">
-          We're an design studio
+          We turn your ideas into reality.
         </UIText>
       </IntroWrapper>
       <BGG>
@@ -69,19 +69,18 @@ const BGG = styled.div`
 // `;
 
 const IntroWrapper = styled.div`
-  ${"" /* max-width: 940px; */}
   margin: 0 auto;
-  ${"" /* padding: 20vh 0; */}
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  
   min-height: 62vh;
+  text-align:start;
   @media screen and (max-width: 480px) {
     margin-left: 20px;
   }
 `;
+
 
 const UIText = styled.div`
   font-family: ${(props) => props.font};

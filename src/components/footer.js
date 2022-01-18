@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import img from "../assets/images/new-logo-light.png";
-import insta from "../assets/images/icons/instagram.svg";
-import linkedin from "../assets/images/icons/linkedin.svg";
-import whatsapp from "../assets/images/icons/whatsapp.svg";
+import { FaLinkedin, FaWhatsapp, FaInstagram } from "react-icons/fa";
 function Footer() {
   return (
     <FooterContainer>
@@ -12,17 +10,17 @@ function Footer() {
       <SocialIconsWrapper>
         <a href="https://www.instagram.com/aelinmedia/">
           <SocialIcon>
-            <Icon src={insta} alt="" />
+            <FaInstagram color="white" />
           </SocialIcon>
         </a>
         <a href="https://www.linkedin.com/company/aelin-media-pvt-ltd">
           <SocialIcon>
-            <Icon src={linkedin} alt="" />
+            <FaLinkedin color="white" />
           </SocialIcon>
         </a>
         <a href="https://wa.me/%2B919951814924">
           <SocialIcon>
-            <Icon src={whatsapp} alt="" />
+            <FaWhatsapp color="white" />
           </SocialIcon>
         </a>
       </SocialIconsWrapper>
@@ -75,4 +73,5 @@ const Icon = styled.img`
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+  color: white;
 `;
